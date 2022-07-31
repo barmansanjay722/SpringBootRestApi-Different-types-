@@ -44,7 +44,7 @@ public class EmployeeService {
 			employeeUpdate.setAddress(employee.getAddress());
 			employeeUpdate.setEmpId(employee.getEmpId());
 			
-			return employeeRepository.save(employeeUpdate);
+			return employeeRepository.save(employee);
 		}
 		else {
 			return null;

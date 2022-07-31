@@ -41,7 +41,7 @@ public class BookService {
 			bookUpdate.setType(book.getType());
 			bookUpdate.setAuthor(book.getAuthor());
 			
-			return bookRepository.save(book);
+			return bookRepository.save(bookUpdate);
 		}
 		else {
 			return null;
